@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Agremate.Domain.Samples;
+using Agremate.EntityFramework.Repositories;
+using Microsoft.EntityFrameworkCore;
 namespace Agremate.EntityFramework;
 
 public static class AgremateEntityFrameworkCoreModule
@@ -9,5 +11,7 @@ public static class AgremateEntityFrameworkCoreModule
 
         services.AddDbContext<AgremateDbContext>(options =>
             options.UseNpgsql(connectionString));
+
+        services.AddScoped<ISampleRepository, SampleRepository>();
     }
 }

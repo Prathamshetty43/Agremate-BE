@@ -1,29 +1,11 @@
-﻿using Agremate.ApplicationContracts.ServiceInterfaces;
-using Agremate.Applications;
-using Agremate.EntityFramework;
-using Agremate.Domain.Samples; 
-using Agremate.EntityFramework.Repositories; 
+﻿using Agremate;
 
 var builder = WebApplication.CreateBuilder(args);
 
-AgremateEntityFrameworkCoreModule.ConfigureServices(builder.Services, builder.Configuration);
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddScoped<ISampleService, SampleService>();
-builder.Services.AddScoped<ISampleRepository, SampleRepository>(); 
+AgremateHostModule.ConfigureServices(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+AgremateHostModule.ConfigureApplication(app);
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
 app.Run();

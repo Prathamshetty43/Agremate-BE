@@ -1,0 +1,6 @@
+@Agremate_HostAddress = http://localhost:5220
+
+GET {{Agremate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

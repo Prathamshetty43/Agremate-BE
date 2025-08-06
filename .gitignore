@@ -1,201 +1,30 @@
-## .NET & Visual Studio Ignore File
-## Based on GitHub's Dotnet.gitignore and VisualStudio.gitignore
-## Source: https://github.com/github/gitignore
-
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# MonoDevelop/Xamarin Studio
-*.userprefs
-
-# Mono auto generated files
-mono_crash.*
-
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Oo]ut/
-[Ll]og/
-[Ll]ogs/
-
-# Visual Studio folders
-.vs/
-.vscode/
-Generated\ Files/
-wwwroot/
-
-# MSTest, NUnit
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
-
-# Benchmark
-BenchmarkDotNet.Artifacts/
-
-# DotNet artifacts
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
-# NuGet
-*.nupkg
-*.snupkg
-**/[Pp]ackages/*
-!**/[Pp]ackages/build/
-*.nuget.props
-*.nuget.targets
-
-# Azure
-csx/
-*.build.csdef
-ecf/
-rcf/
-*.azurePubxml
-PublishScripts/
-
-# VS profiler and test tools
-*.psess
-*.vsp
-*.vspx
-*.sap
-*.e2e
-*.coverage
-*.coveragexml
-*.dotCover
-.axoCover/*
-*.mm.*
-AutoTest.Net/
-_Chutzpah*
-*.tmproj
-
-# Logs and reports
-*.log
-CodeCoverage/
-OpenCover/
-healthchecksdb
-
-# ReSharper, Rider, StyleCop
-_ReSharper*/
-*.[Rr]e[Ss]harper
-*.DotSettings.user
-StyleCopReport.xml
-
-# TeamCity, Fody, FAKE, Paket, Cake
-_TeamCity*
-FodyWeavers.xsd
-.fake/
-.paket/paket.exe
-paket-files/
-# Cake
-# tools/**
-# !tools/packages.config
-
-# Web tooling
-bower_components/
-.sass-cache/
-node_modules/
-ClientBin/
-
-# ClickOnce
-publish/
-
-# SQL Server
-*.mdf
-*.ldf
-*.ndf
-
-# Azure Stream Analytics
-ASALocalRun/
-
-# Backup and migration
-MigrationBackup/
-_UpgradeReport_Files/
-Backup*/
-UpgradeLog*.*
-ServiceFabricBackup/
-
-# Windows Store app output
-AppPackages/
-BundleArtifacts/
-Package.StoreAssociation.xml
-_pkginfo.txt
-*.appx
-*.appxbundle
-*.appxupload
-
-# Local History, VS extensions
-.localhistory/
-.mfractor/
-.ionide/
-
-# BizTalk, Orleans, JustMock
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
-*.jmconfig
-orleans.codegen.cs
-
-# Microsoft Fakes
-FakesAssemblies/
-
-# Temporary
-*.tmp
-*.tmp_proj
-~$*
-*~
-*.dbmdl
-*.publishsettings
-
-# Visual Studio build tools
-*.ilk
-*.meta
-*.obj
-*.iobj
-*.pch
-*.pdb
-*.ipdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.svclog
-*.scc
-*.vspscc
-*.vssscc
-.builds
-*.binlog
-
-# Backup .rptproj files
-*.rptproj.bak
-*.rptproj.rsuser
-
-# Visual Studio 6
-*.plg
-*.opt
-*.vbw
-
-# GhostDoc
-*.GhostDoc.xml
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/azds.yaml
+**/bin
+**/charts
+**/docker-compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+LICENSE
+README.md
+!**/.gitignore
+!.git/HEAD
+!.git/config
+!.git/packed-refs
+!.git/refs/heads/**

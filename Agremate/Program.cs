@@ -9,3 +9,4 @@ var app = builder.Build();
 AgremateHostModule.ConfigureApplication(app);
 
 app.Run();
+
